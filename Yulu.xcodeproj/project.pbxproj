@@ -14,6 +14,11 @@
 		B257665623C4539A000B14D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B257665523C4539A000B14D2 /* Assets.xcassets */; };
 		B257665923C4539A000B14D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B257665723C4539A000B14D2 /* LaunchScreen.storyboard */; };
 		B257666423C4539A000B14D2 /* YuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257666323C4539A000B14D2 /* YuluTests.swift */; };
+		B257667023C45547000B14D2 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257666F23C45547000B14D2 /* CustomCellTableViewCell.swift */; };
+		B257667523C455B4000B14D2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257667423C455B4000B14D2 /* Model.swift */; };
+		B257667823C456AE000B14D2 /* ContactlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257667723C456AE000B14D2 /* ContactlistViewModel.swift */; };
+		B257667B23C457B0000B14D2 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B257667A23C457B0000B14D2 /* data.json */; };
+		B257667E23C457F6000B14D2 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257667D23C457F6000B14D2 /* DataParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		B257665F23C4539A000B14D2 /* YuluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B257666323C4539A000B14D2 /* YuluTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuluTests.swift; sourceTree = "<group>"; };
 		B257666523C4539A000B14D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B257666F23C45547000B14D2 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		B257667423C455B4000B14D2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B257667723C456AE000B14D2 /* ContactlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactlistViewModel.swift; sourceTree = "<group>"; };
+		B257667A23C457B0000B14D2 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B257667D23C457F6000B14D2 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,11 @@
 		B257664B23C45398000B14D2 /* Yulu */ = {
 			isa = PBXGroup;
 			children = (
+				B257667C23C457E6000B14D2 /* DataParser */,
+				B257667923C4571C000B14D2 /* Data */,
+				B257667623C45698000B14D2 /* ViewModel */,
+				B257667123C4558F000B14D2 /* Model */,
+				B257666E23C45524000B14D2 /* Views */,
 				B257664C23C45398000B14D2 /* AppDelegate.swift */,
 				B257664E23C45398000B14D2 /* SceneDelegate.swift */,
 				B257665023C45398000B14D2 /* ViewController.swift */,
@@ -97,6 +112,46 @@
 				B257666523C4539A000B14D2 /* Info.plist */,
 			);
 			path = YuluTests;
+			sourceTree = "<group>";
+		};
+		B257666E23C45524000B14D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B257666F23C45547000B14D2 /* CustomCellTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B257667123C4558F000B14D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B257667423C455B4000B14D2 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B257667623C45698000B14D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B257667723C456AE000B14D2 /* ContactlistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B257667923C4571C000B14D2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B257667A23C457B0000B14D2 /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B257667C23C457E6000B14D2 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				B257667D23C457F6000B14D2 /* DataParser.swift */,
+			);
+			path = DataParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +238,7 @@
 				B257665923C4539A000B14D2 /* LaunchScreen.storyboard in Resources */,
 				B257665623C4539A000B14D2 /* Assets.xcassets in Resources */,
 				B257665423C45398000B14D2 /* Main.storyboard in Resources */,
+				B257667B23C457B0000B14D2 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B257667523C455B4000B14D2 /* Model.swift in Sources */,
+				B257667823C456AE000B14D2 /* ContactlistViewModel.swift in Sources */,
 				B257665123C45398000B14D2 /* ViewController.swift in Sources */,
 				B257664D23C45398000B14D2 /* AppDelegate.swift in Sources */,
+				B257667023C45547000B14D2 /* CustomCellTableViewCell.swift in Sources */,
+				B257667E23C457F6000B14D2 /* DataParser.swift in Sources */,
 				B257664F23C45398000B14D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
